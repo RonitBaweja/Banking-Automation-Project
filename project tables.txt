@@ -1,0 +1,18 @@
+1.users
+    users_acno integer primary key autoincrement
+    users_pass text NOT NULL
+    users_name text NOT NULL
+    users_mob  text NOT NULL UNIQUE
+    users_email text NOT NULL UNIQUE
+    users_bal   float NOT NULL
+    users_adhar text NOT NULL UNIQUE
+    users_opendate text NOT NULL
+
+2.txn
+    txn_id integer primary key autoincrement
+    txn_acno integer NOT NULL
+    txn_type text NOT NULL
+    txn_date text NOT NULL
+    txn_amt float NOT NULL
+    txn_updatebal float NOT NULL
+    
